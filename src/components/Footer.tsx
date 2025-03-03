@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../assets/logo.png"
 import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -7,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <img src="/src/assets/logo.png" alt="IFS Logo" className="h-12 mb-4" />
+            <img src={logo} alt="IFS Logo" className="h-12 mb-4" />
             <p className="text-gray-400 mb-4">
               Building excellence since 2015. Quality construction services for commercial, residential, and industrial projects.
             </p>

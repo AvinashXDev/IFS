@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, X, Home, Building2, Briefcase, Phone, Info } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from "../assets/logo.png"
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img className="h-10" src="/src/assets/logo.png" alt="IFS Logo" />
+              <img className="h-10" src={logo} alt="IFS Logo" />
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
