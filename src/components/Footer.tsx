@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} IFS Construction. All rights reserved.
+              &copy; {new Date().getFullYear()} Infra and Facility Services. All rights reserved.
             </p>
             <div className="flex space-x-4 text-sm text-gray-500">
               <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>

@@ -81,6 +81,27 @@ const WorkedWith: React.FC = () => {
               </div>
             ))}
           </motion.div>
+          <motion.div 
+            className="flex space-x-16"
+            animate={{ x: [-1500, 0] }}
+            transition={{
+              x: {
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 30,
+                ease: "linear",
+              },
+            }}
+          >
+            {[...companyLogos.reverse(), ...companyLogos].map((company, index) => (
+              <div key={index} className="flex flex-col items-center justify-center min-w-[200px]">
+                <div className="bg-dark-lighter p-6 rounded-lg border border-gray-800 hover:border-primary/50 transition-colors">
+                  <div className="text-primary">{company.icon}</div>
+                </div>
+                <p className="mt-2 text-gray-400 text-sm">{company.name}</p>
+              </div>
+            ))}
+          </motion.div>
           
          
         </div>
