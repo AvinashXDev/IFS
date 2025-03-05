@@ -39,7 +39,7 @@ const companyLogos = [
   , name: "Alps Chemicals" }
 
  
-];
+];  
 
 const WorkedWith: React.FC = () => {
   return (
