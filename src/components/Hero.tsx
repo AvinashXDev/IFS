@@ -78,8 +78,8 @@ const Hero: React.FC = () => {
           width: "100%", 
           maxWidth: "420px", 
           height: "auto", 
-          marginLeft: "100px", 
-          marginRight: "0px", 
+          marginLeft: "95px", 
+          marginRight: "50px", 
           display: "block", 
           marginTop: "5vh" 
         }}
