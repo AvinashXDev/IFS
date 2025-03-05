@@ -9,7 +9,8 @@ const LogoCanvas: React.FC = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 1, ease: "easeOut" }}
       whileHover={{ scale: 1.05 }}
-      className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-[#FF7A00] shadow-lg">
+      className="relative w-90 h-90 max-sm:w-80 max-sm:h-80 rounded-full overflow-hidden border-4 border-[#FF7A00] shadow-lg"
+>
       
       <div className="absolute -z-10 w-full h-full bg-[#FF7A00] blur-2xl opacity-20 animate-pulse"></div>
 
