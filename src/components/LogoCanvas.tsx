@@ -1,19 +1,27 @@
-// import { motion } from "framer-motion";
-// import logo from "../assets/l"; // Update with actual logo path
+import React from "react";
+import { motion } from "framer-motion";
+import img from "../assets/WhatsApp Image 2025-03-06 at 03.23.29_54677f88.jpg";
 
-const AnimatedLogo = () => {
+const LogoCanvas: React.FC = () => {
   return (
-   <>
-   <div className="relative flex justify-center items-center h-screen">
-  <h1 className="text-6xl font-bold text-gray-200 relative">
-    IFS
-    <span className="absolute top-0 left-0 text-gray-800 transform translate-x-1 translate-y-1 blur-sm">
-      IFS
-    </span>
-  </h1>
-</div>
-</>
-  )
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      whileHover={{ scale: 1.05 }}
+      className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-[#FF7A00] shadow-lg">
+      
+      <div className="absolute -z-10 w-full h-full bg-[#FF7A00] blur-2xl opacity-20 animate-pulse"></div>
+
+      <motion.img
+        src={img}
+        alt="Founder"
+        className="w-full h-full object-cover"
+        animate={{ y: [0, -6, 0] }}
+        transition={{ duration: 3, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+      />
+    </motion.div>
+  );
 };
 
-export default AnimatedLogo;
+export default LogoCanvas;

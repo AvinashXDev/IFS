@@ -1,13 +1,13 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
-// import LogoCanvas from './LogoCanvas';
+import LogoCanvas from './LogoCanvas';
 // import { img } from 'framer-motion/client';
-import logo from "../assets/logo.png"
+// import logo from "../assets/logo.png"
 
 const Hero: React.FC = () => {
   return (
-<div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-5 sm:px-2 lg:px-6 xl:px-2 pt-24 max-w-screen-lg mx-auto">
+<div className="min-h-screen flex flex-col md:flex-row items-center justify-around px-5 sm:px-2 lg:px-6 xl:px-2 pt-20 max-w-screen-lg mx-auto" style={{maxWidth:1250}}>
 <div className="w-full md:w-1/2 flex flex-col justify-center items-start space-y-6 md:pr-6 ">
 <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,9 +74,18 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7 }}
         className="w-full md:w-1/2 h-[400px] md:h-[600px] mt-10 md:mt-0"
+        style={ { 
+          width: "100%", 
+          maxWidth: "420px", 
+          height: "auto", 
+          marginLeft: "100px", 
+          marginRight: "0px", 
+          display: "block", 
+          marginTop: "5vh" 
+        }}
       >
-        {/* <LogoCanvas /> */}
-<img 
+        <LogoCanvas   />
+{/* <img 
   src={logo} 
   alt="Logo" 
   style={{ 
@@ -87,8 +96,8 @@ const Hero: React.FC = () => {
     marginRight: "auto", 
     display: "block", 
     marginTop: "10vh" 
-  }} 
-/>
+  }}  */}
+
       </motion.div>
     </div>
   );
