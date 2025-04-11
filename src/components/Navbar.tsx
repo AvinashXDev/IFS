@@ -24,7 +24,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <img className="h-10" src={logo} alt="IFS Logo" />
+              <a href="#home">              <img className="h-10" src={logo} alt="IFS Logo" />
+              </a>
             </div>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -50,9 +51,10 @@ const Navbar: React.FC = () => {
             </button>
           </div>
           <div className="hidden md:block">
-            <button className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            <a href="#contact"> <button className="bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
               Get a Quote
-            </button>
+            </button></a>
+           
           </div>
         </div>
       </div>
@@ -78,9 +80,10 @@ const Navbar: React.FC = () => {
                 {item.name}
               </a>
             ))}
-            <button className="w-full mt-4 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
+            <a href="#contact">  <button  className="w-full mt-4 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors">
               Get a Quote
-            </button>
+            </button></a>
+          
           </div>
         </motion.div>
       )}

@@ -7,6 +7,7 @@ import net from "../assets/pigeon net.png"
 import renovation from "../assets/renovation.png"
 import wall from "../assets/wall.png"
 
+
 const projects = [
   {
     title: 'Stylish Bedroom & Hall Interiors',
@@ -48,7 +49,7 @@ const projects = [
 
 const categories = ['All','Interior', 'Commercial', 'Residential', 'Industrial', 'Renovation' ];
 
-const Projects: React.FC = () => {
+const Projects: React.FC= () => {
   const [activeCategory, setActiveCategory] = useState('All');
   
   const filteredProjects = activeCategory === 'All' 
@@ -56,7 +57,7 @@ const Projects: React.FC = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="projects" className="py-20 bg-dark">
+    <section id="projects"  className="py-20 bg-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
