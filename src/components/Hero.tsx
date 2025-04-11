@@ -1,7 +1,7 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
-import LogoCanvas from './LogoCanvas';
+import logo from "../assets/logo.png"
 // import { img } from 'framer-motion/client';
 // import logo from "../assets/logo.png"
 
@@ -68,24 +68,7 @@ const Hero: React.FC = () => {
           </button>
         </motion.div>
       </div>
-      
-      <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.7 }}
-        className="w-full md:w-1/2 h-[400px] md:h-[600px] mt-10 md:mt-0"
-        style={ { 
-          width: "100%", 
-          maxWidth: "420px", 
-          height: "auto", 
-          marginLeft: "95px", 
-          marginRight: "50px", 
-          display: "block", 
-          marginTop: "5vh" 
-        }}
-      >
-        <LogoCanvas   />
-{/* <img 
+      <img 
   src={logo} 
   alt="Logo" 
   style={{ 
@@ -96,9 +79,10 @@ const Hero: React.FC = () => {
     marginRight: "auto", 
     display: "block", 
     marginTop: "10vh" 
-  }}  */}
-
-      </motion.div>
+  }} />
+      
+      
+ 
     </div>
   );
 };

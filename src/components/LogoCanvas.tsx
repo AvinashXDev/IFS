@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import img from "../assets/WhatsApp Image 2025-03-06 at 03.23.29_54677f88.jpg";
+import img from "../assets/logo.png"
 
 const LogoCanvas: React.FC = () => {
   return (
